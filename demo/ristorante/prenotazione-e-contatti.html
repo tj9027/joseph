@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Joseph Tolentino">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Alex+Brush|Tangerine">
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+-->
+  <link rel="stylesheet" href="css/prenotazione-e-contatti.css?v=1.01">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" media="only screen and ( max-width : 1440px )" href="css/prenotazione-e-contatti-responsive.css">
+  <title>Da Tigiol | Pizzeria Ristorante</title>
+</head>
+
+<body>
+  <!--NAV SECTION-->
+  <nav class="">
+    <a href="index.html" class="brand">Da Tigiol</a>
+    <ul class="">
+      <li class=""> <a href="menu.html" class="">Menu</a> </li>
+      <li class=""> <a href="su-di-noi.html" class="">Su Di Noi</a> </li>
+      <li class=""> <a href="prenotazione-e-contatti.html" class="active"> Prenotazione e Contatti</a> </li>
+      <li class=""> <a href="http://josephtolentino.net" class="">Torna al mio Sito</a> </li>
+    </ul>
+  </nav>
+  <!--INTRO SECTION-->
+  <section class="intro">
+    <div class="layer">
+      <div class="wrapper">
+        <h1 class="golden xlarge-font">Prenotazione e Contatti</h1>
+      </div>
+    </div>
+  </section>
+  <!--RESERVE SECTION-->
+  <section class="reserve">
+    <div class="content">
+      <div class="content-width">
+        <h1 class="sub">PRENOTA</h1>
+        <form class="forms" action="index.html" method="post">
+          <div class="input-group">
+            <div class="flex-vertical">
+              <label for="nomeCognome" class="linguetta">Nome e Cognome</label><input type="text" name="nomeCognome" value="" placeholder="Nome e Cognome" required>
+            </div>
+            <div class="flex-vertical">
+              <label for="email" class="linguetta">Email</label><input type="email" name="email" value="" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="flex-vertical">
+              <label for="persone" class="linguetta">Persone</label><input type="number" name="persone" value="" placeholder="Numero" min="1" max="24" required>
+            </div>
+            <div class="flex-vertical">
+              <label for="data" class="linguetta">Data</label><input type="date" name="data" value="" required>
+            </div>
+            <div class="flex-vertical">
+              <label for="ora" class="linguetta">Ora</label><input type="time" name="ora" value="" min="17:00" max="23:00" required>
+            </div>
+          </div>
+          <input class="golden-border" type="Submit" name="submit" value="Prenota">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!--FOOTER SECTION-->
+  <footer>
+    <div class="circle">
+    </div>
+
+    <div class="footer-size-control">
+      <div class="footer-content-group">
+        <div class="footer-content-wrapper">
+          <h3>Dove Siamo</h3>
+          <div class="footer-flex">
+            <p>Via Nel Tuo Cuore 69</p>
+            <p>Ferrara, 44444</p>
+            <p>Via Nel Tuo Cuore 69</p>
+            <p>Ferrara, 44444</p>
+          </div>
+        </div>
+        <div class="footer-content-wrapper">
+          <h3>Orari</h3>
+          <div class="footer-flex">
+            <div class="hour-flex">
+              <div class="">
+                <p>Lunedi - Giovedi</p>
+                <p>17:30 - 22:00</p>
+              </div>
+              <div class="">
+                <p>Venerdi - Sabato</p>
+                <p>17:30 - 23:00</p>
+              </div>
+            </div>
+            <p>Disponibile per eventi privati nelle Domeniche</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content-group map-container">
+        <div id="map">
+
+        </div>
+      </div>
+      <div class="footer-content-group">
+        <div class="footer-content-wrapper">
+          <h3>Telefono & Email</h3>
+          <div class="footer-flex">
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  +39 333 333 3333</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>  joseph@josephtolentino.net</p>
+          </div>
+        </div>
+        <div class="footer-content-wrapper">
+          <h3>Social Media</h3>
+          <div class="footer-flex-horizontal">
+            <i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-google-plus-square" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-pinterest-square" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-twitter-s" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="arrow">
+      <a href="#"> &uarr;</a>
+    </p>
+    <p>Copyrights&copy; Free Licence. Created By Joseph Tolentino. Copyrights&copy; Licenza Gratuita. Creato da Joseph Tolentino.</p>
+  </footer>
+
+
+  <script src="js/jquery-3.2.1.js">
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9-dPGaWFroYnOSiSJwnT8OzDg6RaU3s&callback=initMap">
+  </script>
+  <script src="js/maps.js"></script>
+
+  <!--
+  <script src="/js/popper.min.js">
+  </script>
+  <script src="/js/bootstrap.js">
+  </script>
+-->
+  <script src="js/script.js">
+  </script>
+</body>
+
+</html>

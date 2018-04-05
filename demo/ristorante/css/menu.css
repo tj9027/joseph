@@ -1,0 +1,57 @@
+@import url("reset.css");
+@import url("index.css");
+
+/*
+*   INTRO SECTION
+*/
+.intro{
+  background:url("../images/table_tools.jpeg")bottom no-repeat;
+  background-size:cover;
+  height:300px;
+}
+/*
+*   GENERAL CSS
+*/
+section{
+  border-bottom: 2px solid var(--golden);
+  background-color:var(--darkblueish);
+}
+.content{
+  height:1600px;
+  flex-direction:column;
+  justify-content:start;
+}
+.content-width{
+  width:840px;
+  margin:0 auto;
+}
+/*
+*   MENU SECTION
+*/
+.plate-name{
+  font-family:Open Sans,sans-serif;
+  font-size:18px;
+  color:var(--golden);
+  text-align:left;
+  margin:10px auto;
+}
+.plate-description{
+  font-family:Open Sans, sans-serif;
+  font-size:14px;
+  color:var(--almostwhite);
+  float:left;
+  display:inline-block;
+}
+.price{
+  display:inline-block;
+  float:right;
+  font-family:Open Sans,sans-serif;
+  font-size:18px;
+  color:var(--golden);
+}
+.spacing{
+  margin: 90px auto;
+  opacity:1;
+  transform:translate(0%)scale(1);
+
+}

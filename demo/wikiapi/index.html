@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>simple API project</title>
+    <meta name="description" content="simple API/Ajax/json project">
+    <meta name="author" content="Joseph Tolentino">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/master.css?v=1.0">
+</head>
+
+<body>
+    <div id=container>
+        <div class="title-container">
+            <h1>Wikipedia Viewer</h1>
+            <hr>
+            <div class="weather-container">
+                <span id="position"></span>
+                <img id="weathericon" src="" alt=""> 
+                <span id="weather"></span>
+                <span class="temp-container">
+                    <span id="temp"></span>
+                    <span class="degree"></span>
+                </span>
+            </div>
+            <div class="wiki-container">
+                <div id="search-container">
+                    <input id="search" type="search" placeholder="">
+                    <span class="button" id="go">go!</span>
+                </div>
+                <div class="randoms">
+                <span class="button" id="quote">random quote</span>
+                <span class="button" id="random">random article</span>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quote-container" class="hidden"></div>
+    <div id="res-list-container" class="hidden"></div>
+    </div>
+</body>
+<script src='scripts/master.js'></script>
+
+</html>

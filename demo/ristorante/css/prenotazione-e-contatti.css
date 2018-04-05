@@ -1,0 +1,96 @@
+@import url("reset.css");
+@import url("index.css");
+
+/*
+*   INTRO SECTION
+*/
+.intro{
+  background:url("../images/table_tools.jpeg")bottom no-repeat;
+  background-size:cover;
+  height:300px;
+}
+/*
+*   GENERAL CSS
+*/
+section{
+  border-bottom: 2px solid var(--golden);
+  background-color:var(--darkblueish);
+}
+/*
+*   RESERVE SECTION
+*/
+.linguetta{
+  display:block;
+  font-family:Open Sans, sans-serif;
+  font-size:18px;
+  color: var(--almostwhite);
+  margin:20px auto;
+}
+input{
+  display:block;
+  font-size:18px;
+  height:30px;
+}
+.input-group{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:520px;
+}
+.golden-border{
+  margin:90px auto auto auto;
+}
+.flex-vertical{
+  display:flex;
+  flex-direction:column;
+}
+
+.sub{
+  opacity:1;
+  transform:translate(0%)scale(1);
+  margin-bottom:80px;
+}
+
+/*
+*   FOOTER SECTION
+*/
+footer{
+  height:1200px;
+  flex-direction:column;
+  position:relative;
+}
+.footer-size-control{
+  height:1000px;
+}
+.footer-content-wrapper{
+  height:initial;
+}
+.footer-content-group{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  justify-content:space-between;
+}
+#map{
+  width:1200px;
+  height:480px;
+  margin: 50px auto;
+}
+
+.footer-flex-horizontal{
+  display:flex;
+  width:500px;
+  justify-content:space-around;
+}
+.footer-content-wrapper h3{
+  margin-bottom:50px;
+}
+.circle{
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  background:var(--darkblueish);
+  position:absolute;
+  top:0;
+  transform:translateY(-50%);
+}

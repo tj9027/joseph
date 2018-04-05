@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #bbb;
+}
+
+.tigiolsRestaurant {
+  background-image: url(media/table_tools.jpeg);
+}
+
+.recipes {
+  background-image: url(media/tables_in.jpeg);
+}
+
+.blendSection {
+  background-image: url(media/chef.jpeg);
+}
+
+.ourStory, .menuSection, .delightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourStory *, .menuSection *, .delightSection * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.tigiolsRestaurant, .blendSection, .recipes {
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1024px;
+}
+
+.fourImages img {
+  max-width: 35%;
+  margin: 10px auto;
+}
+
+.tigiolsRestaurant, .blendSection, .imageRecipes, .recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tigiolsRestaurant, .blendSection, .imageRecipes, .ourStory, .delightSection, .menuSection, .recipes .ourStory {
+  min-height: 1024px;
+}
+
+p {
+  font-family: ubuntu, sans serif;
+  font-weight: 100;
+  margin-top: 80px;
+  color: #212121;
+  font-size: 1.5em;
+}
+
+span {
+  line-height: 0.3em;
+}
+
+.cursiveWord {
+  font-family: Tangerine, cedarville cursive;
+  font-size: 7em;
+  font-style: italic;
+  color: #DAA520;
+  opacity: 0;
+  transform: scale(0.95);
+  text-shadow: 0 1px 6px;
+  transition: all 700ms linear 500ms;
+}
+
+a {
+  color: #DAA520;
+  margin-bottom: 50px;
+}
+
+.titleSection, a, .footTitle {
+  font-family: open sans, sans serif;
+  font-variant: small-caps;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.titleSection {
+  font-size: 2.6em;
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(150%);
+  transition: all 500ms linear 500ms;
+}
+.infoFlex{
+  display:flex;
+  justify-content: space-around;
+}
+.info-about{
+  background-color:rgba(255,255,255, 0.2);
+  width:400px;
+}
+.extra{
+  margin:0 auto;
+  width: 80%;
+  margin-bottom: 80px;
+}
+.telephoneDiv{
+  display: flex;
+  justify-content: space-around;
+}
+.telephoneDiv p{
+  margin: 50px 0;
+}
+.extraTitle{
+  color:#DAA520;
+}
+
+/*-----
+    temporary
+     -----*/
+
+img {
+  max-width: 50%;
+  align-self: center;
+}
+
+/*-----
+    temporary
+     -----*/
+
+.ourStory img {
+  margin: auto;
+  padding: 30px 0;
+}
+
+footer {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-evenly;
+  align-item: center;
+  height: 200px;
+}
+
+footer .footTitle {
+  margin-bottom: 30px;
+}
+
+footer .infos {
+  display: flex;
+  justify-content: space-between;
+  align-item: center;
+}
+
+footer p {
+  margin: 0 10px;
+  line-height: 1.7em;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+/*-----
+    animation
+     -----*/
+
+.inView {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.faded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*RESERVATION PAGE*/
+
+.reserveBackground {
+  background-image: url(media/table_tools.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reserveBackground nav a {
+  text-align: left;
+  width: 100%;
+}
+
+.cursiveWord-noAnimation {
+  font-family: Tangerine, cedarville cursive;
+  font-size: 7em;
+  font-style: italic;
+  color: #DAA520;
+  text-shadow: 0 1px 6px;
+}
+
+form {
+  color: #eee;
+  font-size: 1.3em;
+  font-family: open sans, sans serif;
+  text-shadow: 0 1px 6px #eee;
+}
+
+.inputs {
+  max-width: 700px;
+  margin: 100px auto;
+}
+
+.inputs button {
+  font-family: tangerine, cedarville cursive;
+  font-size: 2em;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  color: #DAA520;
+  font-weight: 900;
+}
+
+input {
+  text-align: left;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 2em;
+  margin: 15px auto;
+}
+
+.nums {
+  width: 220px;
+  margin: 15px 30px;
+}
+
+/*ABOUTUS*/
+
+#map {
+  width: 700px;
+  height: 500px;
+  margin: 100px auto;
+}
+
+.aboutUsText p {
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  line-height: 2em;
+}
+
+.aboutUsText {
+  margin: 0 100px;
+}
+
+@media screen and (max-width:1024px) and (min-width:415px) {
+  .tigiolsRestaurant {
+    background-image: url(media/table_tools.jpeg);
+  }
+  .recipes {
+    background-image: url(media/tables_in.jpeg);
+  }
+  .blendSection {
+    background-image: url(media/chef.jpeg);
+  }
+  .tigiolsRestaurant, .blendSection, .recipes {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1000px;
+    height: 1024px;
+  }
+  .tigiolsRestaurant, .blendSection, .imageRecipes, .ourStory, .delightSection, .menuSection, .recipes .ourStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tigiolsRestaurant, .blendSection, .imageRecipes, .ourStory, .delightSection, .menuSection, .recipes .ourStory {
+    min-height: 1024px;
+  }
+  p {
+    font-family: ubuntu, sans serif;
+    font-weight: 100;
+    margin-top: 80px;
+    color: #212121;
+    font-size: 1.5em;
+  }
+  span {
+    line-height: 0.3em;
+  }
+  .cursiveWord {
+    font-family: Tangerine, cedarville cursive;
+    font-size: 7em;
+    font-style: italic;
+    color: #DAA520;
+    opacity: 0;
+    transform: scale(0.95);
+    text-shadow: 0 1px 6px;
+    transition: all 700ms linear;
+  }
+  a {
+    color: #DAA520;
+    margin-bottom: 50px;
+  }
+  .titleSection, a, .footTitle {
+    font-family: open sans, sans serif;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 2em;
+  }
+  .titleSection {
+    font-size: 2.6em;
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(150%);
+    transition: all 500ms linear 500ms;
+  }
+  /*-----
+    temporary
+     -----*/
+  .ourStory img {
+    max-width: 70%;
+  }
+  .menuSection img {
+    max-width: 47%;
+    padding: 10px;
+  }
+  .delightSection img {
+    max-width: 32%;
+    padding: 30px;
+  }
+  /*-----
+    temporary
+     -----*/
+  .ourStory img {
+    margin: auto;
+    padding: 30px 0;
+  }
+
+  footer {
+    background-color: #212121;
+    display: flex;
+    justify-content: space-evenly;
+    align-item: center;
+    height: 200px;
+  }
+  footer .footTitle {
+    margin-bottom: 30px;
+  }
+  footer .infos {
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+  }
+  footer p {
+    margin: 0 10px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+    color: #bbb;
+  }
+  /*-----
+    animation
+     -----*/
+  .inView {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .faded {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width:414px) and (min-width:0) {
+  * {
+    display: block;
+  }
+  .tigiolsRestaurant {
+    background-image: url(media/table_tools.jpeg);
+  }
+  .recipes {
+    background-image: url(media/tables_in.jpeg);
+  }
+  .blendSection {
+    background-image: url(media/chef.jpeg);
+  }
+  .tigiolsRestaurant, .blendSection, .recipes {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1000px;
+    height: 700px;
+  }
+  .tigiolsRestaurant, .blendSection, .imageRecipes, .ourStory, .delightSection, .menuSection, .recipes .ourStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tigiolsRestaurant, .blendSection, .imageRecipes, .ourStory, .delightSection, .menuSection, .recipes .ourStory {
+    min-height: 600px;
+  }
+  p {
+    font-family: ubuntu, sans serif;
+    font-weight: 100;
+    margin-top: 80px;
+    color: #212121;
+  }
+  span {
+    line-height: 0.3em;
+  }
+  .cursiveWord {
+    font-family: Tangerine, cedarville cursive;
+    font-size: 6em;
+    font-style: italic;
+    color: #DAA520;
+    opacity: 0;
+    transform: scale(0.95);
+    text-shadow: 0 1px 6px;
+    transition: all 700ms linear;
+  }
+  a {
+    color: #DAA520;
+    margin-bottom: 50px;
+  }
+  .titleSection, a, .footTitle {
+    font-family: open sans, sans serif;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 1.2em;
+  }
+  .titleSection {
+    font-size: 1.8em;
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(150%);
+    transition: all 500ms linear 500ms;
+  }
+  /*-----
+    temporary
+     -----*/
+  .fourImages img {
+    max-width: 90%;
+  }
+  img {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  /*-----
+    temporary
+     -----*/
+  .ourStory img {
+    margin: auto;
+    padding: 30px 0;
+  }
+  footer {
+    background-color: #212121;
+    height: auto;
+    display: block;
+  }
+  .infos * {
+    display: block;
+    width: 100%;
+    margin: 10px;
+  }
+  footer p {
+    margin: 0;
+    line-height: 1.7em;
+    font-size: 0.9em;
+    color: #bbb;
+  }
+  /*-----
+    animation
+     -----*/
+  .inView {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .faded {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#rmain {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: gold;
+  margin: 10px;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+#rmain a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 0.9em;
+}
+li{
+  display:inline;
+}

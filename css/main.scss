@@ -1,0 +1,311 @@
+
+/*IMPORTS*/
+
+@import 'reset';
+@import 'https://fonts.googleapis.com/css?family=Medula+One';
+
+/*VARIABLES*/
+
+$primary : #292A4D;
+$secondary : #DEA412;
+$almostF: #eeeeee;
+$semitransparent: rgba(238,238,238,0.8);
+$transparent: rgba(0,0,0,0);
+
+/*GENERAL STYLE*/
+
+.height{
+   min-height: 600px;
+}
+.hidden{
+    visibility: hidden;
+}
+.onview{
+    visibility: visible;
+}
+
+button{
+    font-family: medula one, sans-serif;
+    font-size: 1.5rem;
+    background-color:$transparent;
+    color:$primary;
+    border: 1px solid $secondary;
+    border-radius: 5px;
+    width:150px;
+    margin:5px;
+    line-height: 1.3em;
+}
+
+/*HERO SECTION*/
+
+
+.hero-section{
+    background-color:$primary;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    border-bottom:dotted 2px $secondary;
+}
+.logo-container{
+    max-height:300px;
+    max-width:600px;
+    margin:auto;
+    .tags-container{
+        height:150px;
+        max-width: 450px;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        .tag{
+            margin:auto 5px;
+            font-family: medula one, sans-serif;
+            text-align:center;
+            font-size:1.6rem;
+            color:$secondary;   
+        }
+    }
+}
+
+.brand-logo{
+    max-width: 500px;
+}
+
+
+/*CONTENT SECTION*/
+
+.container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-flow:row wrap;
+    background-color: $almostF;
+}
+
+.content-container{
+    max-width:500px;
+    max-height:350px; 
+    margin:10px;
+    .project{
+        border:1px solid $secondary;  
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color:$primary;
+        background-size: cover;
+        width:500px;
+        height:300px;
+        .project-description{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 300px;
+            line-height: 1.3em;
+            text-align:center;
+            font-size:1.3rem;
+        }
+        .project-description,.project-viewer,.layer{
+            opacity:0;
+            visibility: hidden;
+        }
+        .layer{
+            width:100%;
+            height:100%;
+            background-color: $semitransparent;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-around;
+            align-items:center;
+        
+        }
+    }
+    .project:hover {
+        .project-description,.project-viewer,.layer{
+        visibility:visible;
+        opacity:1;
+        transition: opacity 200ms linear;
+        }
+    }
+    .bottom-name{
+        width:100%;
+        background-color:$primary;
+        color:$secondary;
+        border:1px solid $secondary;
+        text-align:center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.3rem;
+        line-height:2em;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+#project1{
+    background: url(../images/preview/ristoria.jpeg) center no-repeat;
+    background-size: auto;}
+#project2{
+    background: url(../images/preview/api.png) center no-repeat;
+    background-size: auto;}
+#project3{ 
+    background: url(../images/preview/blogger.jpeg) center no-repeat;
+    background-size: auto;}   
+#project4{
+    background: url(../images/preview/youtuber.jpg) center no-repeat;
+    background-size: auto;}
+
+/*CONTACT SECTION*/
+  .contact{
+        border-top:dotted 2px $secondary;
+        border-bottom:dotted 2px $secondary;
+        background-color: $primary;
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .photo-container{
+            height:400px;
+            img{
+                height:90%;
+                margin: 20px;
+                border-radius:50%;
+            }
+        }
+        .about-container{
+            width: 50%;
+            .about{
+                font-family:medula one, sans-serif;
+                font-size: 2rem;
+                text-align:center;
+                color:$secondary;
+                text-shadow: black 1px 1px 3px;
+                line-height: 2.2rem;
+            }
+        }
+    }
+/*FOOTER SECTION*/
+footer{
+    background-color:$primary;
+    min-height: 100px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align:center;
+    color:$almostF;
+
+
+    .links{
+        height:200px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align:center;
+        color:$almostF;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            display:flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            height:150px;
+            button{
+                color:$almostF;
+            }
+            h2{
+                margin-bottom:15px;
+                font-size:1.3rem;
+            }
+            a{  
+                text-decoration:none;
+                color:$secondary;
+
+                button:hover{
+                    background-color:$secondary;
+                    color:$primary;
+                }
+            }
+        }
+    }
+
+
+}
+@media only screen and (max-width: 425px){
+  /*CONTACT SECTION*/
+  .contact{
+    border-top:dotted 2px $secondary;
+    border-bottom:dotted 2px $secondary;
+    background-color: $primary;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    .photo-container{
+        height:400px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        img{
+            height:auto;
+            max-width: 90%;
+            margin:auto;
+            border-radius:50%;
+        }
+    }
+    .about-container{
+        width: 50%;
+        .about{
+            font-family:medula one, sans-serif;
+            font-size: 2rem;
+            text-align:center;
+            color:$secondary;
+            text-shadow: black 1px 1px 3px;
+            line-height: 2.2rem;
+        }
+    }
+}
+/*FOOTER SECTION*/
+footer{
+display:flex;
+flex-flow: column nowrap;
+
+
+.links{
+    height:auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    div{
+        flex-flow: column nowrap;
+        height:auto;
+        margin:10px auto;
+    }
+}
+
+
+}
+/*HERO SECTION*/
+
+.logo-container{
+    max-width:100%;
+    .tags-container{
+        max-width: 100%;
+    }
+}
+.brand-logo{
+    max-width: 100%;
+}
+/*CONTENT SECTION*/
+
+
+.content-container{
+    max-width:100%;
+    .project{
+        width:100%;
+        height:300px;
+        .project-description{
+            max-width: 100%;
+        }
+        .layer{
+            width:100%;
+        }
+    }
+    
+}
+
+//end media 414
+}

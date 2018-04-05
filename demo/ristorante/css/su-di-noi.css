@@ -1,0 +1,66 @@
+@import url("reset.css");
+@import url("index.css");
+
+/*
+*   INTRO SECTION
+*/
+.intro{
+  background:url("../images/table_tools.jpeg")bottom no-repeat;
+  background-size:cover;
+  height:300px;
+}
+/*
+*   GENERAL CSS
+*/
+section{
+  border-bottom: 2px solid var(--golden);
+
+}
+.content-width{
+  width:1440px;
+  margin:0 auto;
+}
+.content-wrapper{
+  display:block;
+  border-radius: 15px;
+  width:600px;
+  height:600px;
+  display:flex;
+  flex-flow:column;
+  justify-content:space-around;
+
+}
+.content-wrapper .sub{
+  margin-top:30px;
+}
+/*
+*   PRIMA SECTION
+*/
+.prima{
+  background:url("../images/tables_out.jpg") no-repeat center;
+  background-size:cover;
+  height:800px;
+}
+.semi-left{
+  background-color:grey;
+  color:var(--almostwhite);
+  margin-left:100px;
+}
+.story{
+  margin:auto;
+}
+/*
+*   SECONDA SECTION
+*/
+.seconda{
+  background:url("../images/tables_in.jpeg") no-repeat center;
+  background-size:cover;
+  height:800px;
+}
+.semi-right{
+  background-color:var(--almostwhite);
+  margin-right:100px;
+}
+.semi-right .sub{
+    color:var(--darkblueish);
+}

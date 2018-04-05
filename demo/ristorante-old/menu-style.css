@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(media/table_tools.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body .layer {
+  background: rgba(0, 0, 0, 0.9);
+  width: 80%;
+  margin: 60px auto;
+}
+h1{
+  color:#dda520;
+  font-family:tangerine,cedarville;
+  font-size: 10em;
+  font-weight: 100;
+  text-align: center;
+  padding:50px 0;
+  text-shadow: 0 1px 6px;
+}
+
+h2 {
+  text-align: center;
+  margin: 60px auto;
+  color: #DAA520;
+  font-family: Tangerine, cedarville cursive;
+  font-size: 5em;
+  font-weight: 300;
+}
+
+h4 {
+  font-style: oblique;
+  font-weight: 600;
+  padding: 10px;
+  color: #DAA520;
+  margin-left: 30px;
+}
+
+.specialh2 {
+  padding-top: 60px;
+  margin-top: 0;
+}
+
+p, ul, li {
+  color: white;
+  font-family: Courgette, cursive;
+  font-weight: 100;
+  margin-left: 20px;
+  font-size: .9em;
+  line-height: 2em;
+  list-style: none;
+}
+
+.price {
+  font-family: open sans, sans-serif;
+  font-style: oblique;
+  color: lightgreen;
+  float: right;
+  margin-right: 50px;
+  font-weight: 600;
+}
+nav{
+  text-align:center;
+}
+li{
+  display:inline;
+}
+a {
+  font-family: open sans, sans serif;
+  font-variant: small-caps;
+  font-weight: 900;
+  font-size: 2.3em;
+  color: #dda520;
+}
+footer {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-evenly;
+  align-item: center;
+  height: 200px;
+  font-family: ubuntu,open sans, sans-serif;
+}
+
+footer .footTitle {
+  margin-bottom: 30px;
+  font-family: open sans, sans serif;
+  font-variant: small-caps;
+  font-weight: 900;
+  font-size: 2em;
+  text-align: center;
+}
+
+footer .infos {
+  display: flex;
+  justify-content: space-between;
+  align-item: center;
+    font-family: ubuntu,open sans, sans-serif;
+}
+
+footer p {
+  margin: 0 10px;
+  line-height: 1.7em;
+  font-size: 0.9em;
+  color: #bbb;
+    font-family: ubuntu,open sans, sans-serif;
+}
+#rmain {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: gold;
+  margin: 10px;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+#rmain a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 0.9em;
+}

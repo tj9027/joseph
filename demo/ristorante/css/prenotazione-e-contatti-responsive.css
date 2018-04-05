@@ -1,0 +1,166 @@
+@import url('reset.css');
+@import url('index.css');
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  /* Styles */
+}
+
+nav {
+  height: auto;
+  flex-direction: column;
+}
+
+nav ul {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+nav ul li a {
+  font-size: 16px;
+}
+
+.brand {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.intro{
+  height:400px;
+}
+.golden{
+  font-size: 90px;
+}
+
+.content{
+  width:auto;
+  height:auto;
+}
+.content-width{
+  width:60%;
+}
+.map-container{
+  width:100%;
+  height:400;
+}
+#map{
+  width:80%;
+}
+footer {
+  font-family: Open Sans, sans-serif;
+  flex-direction: column;
+  height:auto;
+}
+.footer-content-wrapper{
+  margin:auto;
+}
+.footer-content-wrapper h3 {
+  margin: auto;
+  margin: 80px auto;
+  height:auto;
+}
+.footer-content-group{
+  display:block;
+  height:auto;
+}
+.footer-flex-horizontal{
+  width:auto;
+}
+.input-group{
+  width:auto;
+  flex-direction:column;
+}
+.sub{
+  margin:80px auto;
+}
+.golden-border{
+  margin:90px auto;
+}
+.footer-size-control{
+  height:auto;
+  width:100%;
+}
+.xlarge-font{
+  font-size:36px;
+}
+.footer-flex p{
+  font-size:18px;
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  /* Styles */
+  nav {
+    flex-direction: row;
+  }
+  .brand {
+    width: auto;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  footer{
+    display:flex;
+    flex-direction:column;
+  }
+  .footer-content-wrapper {
+    max-width: 600px;
+  }
+  .xlarge-font{
+    font-size: 90px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .input-group{
+    flex-direction:row;
+  }
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles */
+  nav{
+    flex-direction:row;
+  }
+  nav ul{
+    flex-direction:row;
+  }
+  nav ul li a{
+    font-size:24px;
+  }
+  .brand {
+    width:auto;
+  }
+  .golden{
+    font-size: 90px;
+  }
+  .xlarge-font{
+    font-size:190px;
+  }
+  .footer-content-group{
+    display:flex;
+  }
+  .footer-flex-horizontal{
+    width:600px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation : landscape) {
+  /* Styles */
+  footer{
+    flex-direction:column;
+  }
+  nav{
+    flex-direction:column;
+  }
+  nav ul{
+    flex-direction:column;
+  }
+
+}
